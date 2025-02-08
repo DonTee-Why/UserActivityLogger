@@ -1,0 +1,6 @@
+@UserActivityLogger_HostAddress = http://localhost:5018
+
+GET {{UserActivityLogger_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
