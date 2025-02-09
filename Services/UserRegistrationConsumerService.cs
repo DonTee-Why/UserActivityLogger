@@ -23,7 +23,7 @@ namespace UserActivityLogger.Service
                 Port = _settings.Port,
                 UserName = _settings.UserName,
                 Password = _settings.Password,
-                AutomaticRecoveryEnabled = true
+                AutomaticRecoveryEnabled = true // Automatically reconnects if RabbitMQ restarts
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
